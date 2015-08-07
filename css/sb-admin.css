@@ -32,6 +32,10 @@ body {
     line-height: normal;
 }
 
+.btn-primary{
+    background-color: #0c770c;
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 300px;
@@ -291,4 +295,8 @@ ul.alert-dropdown {
 
 .navbar-inverse{
     margin-left: 300px;
+}
+
+.modal-dialog {
+    width:900px;
 }
