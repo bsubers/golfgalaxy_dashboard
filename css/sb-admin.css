@@ -142,6 +142,10 @@ ul.alert-dropdown {
         background-color: #0c770c !important;
         border-left: 4px solid #fff;
     }
+
+    .navbar-inverse{
+    margin-left: 300px;
+}
 }
 
 .side-nav>li>ul {
@@ -281,7 +285,7 @@ ul.alert-dropdown {
     color: #B2B2B2;
 }
 .customer-info hr{
-    color: #B2B2B2;
+    border-top: 1px solid #666666;
 }
 
 .searchbar .form-group{
@@ -293,10 +297,36 @@ ul.alert-dropdown {
     background-color:#0c770c;
 }
 
-.navbar-inverse{
-    margin-left: 300px;
-}
-
 .modal-dialog {
     width:900px;
+}
+
+.customer-info h3{
+    margin-top:7px;
+}
+
+.plain, .plain:hover {
+    background-color:#fff;
+    border:none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #0A600A;
+    border: #0A600A;
+}
+
+.edit {
+    border: 1px solid #fff;
+    background-color: #333;
+    border-radius: 0px;
+}
+
+.edit:hover {
+    background-color: #222;
+    border: 1px solid #fff;
+}
+
+.edit:focus {
+    background-color: #111;
+    border: 1px solid #fff;
 }
