@@ -44,6 +44,10 @@ body {
     #page-wrapper {
         padding: 10px;
     }
+
+    body {
+        margin-top:70px;
+    }
 }
 
 /* Top Navigation */
@@ -89,6 +93,11 @@ body {
     white-space: normal;
 }
 
+.navbar-toggle{
+    background-color: #0C770C;
+    border: none;
+}
+
 ul.message-dropdown {
     padding: 0;
     max-height: 250px;
@@ -119,7 +128,7 @@ ul.alert-dropdown {
 @media(min-width:768px) {
     .side-nav {
         position: fixed;
-        top: 51px;
+        top: 71px;
         left: 300px;
         width: 300px;
         margin-left: -300px;
@@ -145,7 +154,27 @@ ul.alert-dropdown {
 
     .navbar-inverse{
     margin-left: 300px;
+    margin-top:20px;
+    }
+    .navbar-brand{
+        position: absolute; 
+        width: 225px;
+        left:-275px;
+    }
+
+    .navbar-brand img{
+    width: 200px;
 }
+
+    .navbar-collapse:before{
+        content: url("../i/topbar_angle.svg") !important;
+        position: absolute;
+        left: 0;  
+        display: block;
+        background-size: 100px 100px;
+        width:50px;
+        height: 50px;
+    }
 }
 
 .side-nav>li>ul {
@@ -329,4 +358,9 @@ ul.alert-dropdown {
 .edit:focus {
     background-color: #111;
     border: 1px solid #fff;
+}
+
+.form-control{
+    border: none;
+    border-left:1px solid #0A600A;
 }
