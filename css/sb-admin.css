@@ -11,6 +11,10 @@ body {
     background-color: #fff;
 }
 
+.container-fluid{
+    margin-top:40px;
+}
+
 @media(min-width:768px) {
     body {
         margin-top: 50px;
@@ -145,8 +149,13 @@ ul.alert-dropdown {
         width: 300px;
     }
 
-    .side-nav li a:hover,
-    .side-nav li a:focus {
+
+.side-nav>li>ul>li>a{
+    border-left: 4px solid rgba(255,255,255,0);
+}
+
+   .side-nav>li>ul>li>a:hover,
+.side-nav>li>ul>li>a:focus {
         outline: none;
         background-color: #0c770c !important;
         border-left: 4px solid #fff;
@@ -267,17 +276,44 @@ ul.alert-dropdown {
 
 .orderhistory{
     background-color: #E5E5E5;
+    overflow: hidden;
+    position: fixed;
+    height:100%;
+}
+
+.order {
+    float:left;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    margin-top: 14px;
+    padding-left:28px;
+}
+
+.order a{
+    color:#333;
+}
+
+a.orderdetails{
+    display: block;
+    float:left;
+    width: 100%;
+        border-left: 4px solid #E5E5E5;
+}
+
+a.orderdetails:hover{
+    background-color: #ddd;
+    border-left: 4px solid #0c770c;
 }
 
 .orderhistory ul{
 -webkit-padding-start:0px;
+float:left;
+margin-left: 28px;
 }
 
 .orderhistory li{
     list-style: none;
-    margin-bottom:14px;
-    padding-bottom:14px;
-    border-bottom:1px solid #fff;
 }
  /*
 .orderhistory li ul.items li{
@@ -287,6 +323,7 @@ ul.alert-dropdown {
 .orderhistory strong{
     display: block;
     float:left;
+    color: #0c770c;
 }
 
 
@@ -294,11 +331,13 @@ ul.alert-dropdown {
     padding-top:10px;
     padding-bottom:10px;
     background-color: #0c770c;
+    position: fixed;
+    z-index: 1;
 }
 
 .customer-info{
     width: 225px;
-    padding:14px;
+    padding: 28px;
 }
 
 .customer-info img{
@@ -363,4 +402,8 @@ ul.alert-dropdown {
 .form-control{
     border: none;
     border-left:1px solid #0A600A;
+}
+
+.insetleft {
+    padding-left:28px;
 }
