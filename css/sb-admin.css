@@ -38,6 +38,7 @@ body {
 
 .btn-primary{
     background-color: #0c770c;
+    border:none;
 }
 
 @media(min-width:768px) {
@@ -312,8 +313,11 @@ a.orderdetails:hover{
 
 .orderhistory ul{
 -webkit-padding-start:0px;
-float:left;
 margin-left: 28px;
+}
+
+.orderhistory .items{
+    float:left;
 }
 
 .orderhistory li{
@@ -335,6 +339,19 @@ a.orderdetails:hover strong{
     color: #0c770c;
 }
 
+.orderhistory .btn-success{
+    float:left;
+    clear: left;
+    margin-left: 28px;
+    background-color: #ddd;
+    border: none;
+    color:#333;
+}
+
+#more ul{
+    clear:left;
+    float:left;
+}
 
 .searchbar{
     padding-top:10px;
@@ -430,6 +447,10 @@ a.orderdetails:hover strong{
     width:200px;
 }
 
+.modal-backdrop.in{
+    opacity: .75;
+}
+
 .modal-content{
     border-radius: 0px;
     overflow:hidden;
@@ -461,6 +482,10 @@ a.orderdetails:hover strong{
     width:50%;
     float:left;
     padding: 14px;
+}
+
+.modal-footer .plain:hover{
+    background-color: #eee;
 }
 
 .modal-title {
