@@ -11,6 +11,10 @@ body {
     background-color: #fff;
 }
 
+h1, h2{
+    font-weight:300;
+}
+
 .container-fluid{
     margin-top:40px;
 }
@@ -148,6 +152,7 @@ ul.alert-dropdown {
 
     .side-nav>li>a {
         width: 300px;
+        padding-left: 28px;
     }
 
 
@@ -363,8 +368,20 @@ a.orderdetails:hover strong{
 }
 
 .customer-info{
+    padding:24px 28px 28px 28px;
+}
+
+.leftsidebar{
     width: 225px;
-    padding: 28px;
+    padding: 0px 28px 28px 28px;
+}
+
+.leftsidebar label, .leftsidebar h2{
+    color:#b2b2b2;
+}
+
+.leftsidebar form{
+    width: 245px;
 }
 
 .customer-info img{
