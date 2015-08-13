@@ -342,6 +342,7 @@ a.orderdetails:hover strong{
     background-color: #0c770c;
     position: fixed;
     z-index: 1;
+    width: 100%;
 }
 
 .customer-info{
