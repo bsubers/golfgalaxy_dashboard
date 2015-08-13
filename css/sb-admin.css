@@ -285,7 +285,7 @@ ul.alert-dropdown {
     float:left;
     display: block;
     width: 100%;
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #f1f1f1;
     margin-top: 14px;
     padding-left:28px;
 }
@@ -301,8 +301,12 @@ a.orderdetails{
         border-left: 4px solid #E5E5E5;
 }
 
+a.orderdetails li{
+    color: #1A1A1A;
+}
+
 a.orderdetails:hover{
-    background-color: #ddd;
+    background-color: #F1F1F1;
     border-left: 4px solid #0c770c;
 }
 
@@ -323,8 +327,12 @@ margin-left: 28px;
 .orderhistory strong{
     display: block;
     float:left;
-    color: #0c770c;
     width: 10%;
+    color:#333;
+}
+
+a.orderdetails:hover strong{
+    color: #0c770c;
 }
 
 
@@ -343,7 +351,7 @@ margin-left: 28px;
 
 .customer-info img{
     width: 197px;
-    margin: 0 auto;
+    margin: 14px auto;
 }
 .customer-info h2, .customer-info h3, .customer-info h4, .customer-info h5, .customer-info h6, .customer-info p{
     color:#fff;
@@ -400,11 +408,66 @@ margin-left: 28px;
     border: 1px solid #fff;
 }
 
-.form-control{
+.searchbar .form-control{
     border: none;
     border-left:1px solid #0A600A;
 }
 
+.form-control {
+    border-radius: 0px;
+}
+
+.form-control.tworows{
+    margin-bottom: 14px;
+}
+
 .insetleft {
     padding-left:28px;
+}
+
+.form-group.employees{
+    width:200px;
+}
+
+.modal-content{
+    border-radius: 0px;
+    overflow:hidden;
+}
+
+.modal-body{
+    float:left;
+    margin-top: 28px;
+}
+
+.modal-body img{
+    margin-bottom:14px;
+}
+
+.modal-footer{
+    padding: 0px;
+    float:left;
+    width:100%;
+}
+
+.modal-footer .btn + .btn{
+    width: 50%;
+    margin-left:0px;
+    border-radius: 0px;
+    padding: 14px;
+}
+
+.modal-footer .plain{
+    width:50%;
+    float:left;
+    padding: 14px;
+}
+
+.modal-title {
+    margin-left:28px;
+    color: #0A600A;
+}
+
+textarea.form-control{
+    width:530px;
+    height:110px;
 }
